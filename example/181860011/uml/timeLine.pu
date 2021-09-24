@@ -1,0 +1,15 @@
+@startuml
+
+collections Gourd
+participant line
+participant theGeezer
+participant sorter
+participant log
+participant writer
+
+create Gourd
+line -> Gourd: 传入
+line -> line:put()
+
+
+@enduml
