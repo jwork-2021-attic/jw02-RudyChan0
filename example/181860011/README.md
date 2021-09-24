@@ -8,3 +8,6 @@
 
 ### 时序图
 ![](https://github.com/jwork-2021/jw02-RudyChan0/blob/master/example/181860011/uml/timeLine.png)
+
+### 设计理念
+

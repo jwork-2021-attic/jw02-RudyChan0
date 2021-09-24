@@ -4,12 +4,29 @@ collections Gourd
 participant line
 participant theGeezer
 participant sorter
+participant bubbleSorter
 participant log
 participant writer
 
-create Gourd
-line -> Gourd: 传入
-line -> line:put()
 
+line <- Gourd: 作为参数
+line -> line:put(Gourd.n)
+note left :重复七次
+
+theGeezer->theGeezer:getTheGeezer()
+
+create bubbleSorter
+sorter->bubbleSorter:创建并指向
+
+sorter->theGeezer:作为参数
+theGeezer->theGeezer:setSorter(sorter)
+
+line->theGeezer:作为参数
+log->theGeezer:log = theGeezer.lineUp(line)
+
+log->writer:作为参数
+writer->writer:write(log)
+writer->writer:flush()
+writer->writer:close()
 
 @enduml
