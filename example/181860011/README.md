@@ -20,7 +20,7 @@
 
 ## task2
 
-将Gourd设置为class，定义静态变量gourds，通过调用Gourd.generateGourds(num)，生成所需的随机颜色单位。
+将Gourd设置为class，定义静态变量gourds，通过调用Gourd.generateGourds(num)，生成所需的随机颜色单位。  
 在Line中调用randomPut(Gourd.getGourds())实现随机位置的排布。
 
 ### 类图
@@ -31,3 +31,5 @@
 
 ### 可视化结果链接
     https://asciinema.org/a/UzCoJZuV3R5i89iTPEegj1J6e
+
+[![asciicast](https://asciinema.org/a/UzCoJZuV3R5i89iTPEegj1J6e)
