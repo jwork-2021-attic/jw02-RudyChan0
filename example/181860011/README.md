@@ -32,4 +32,4 @@
 ### 可视化结果链接
     https://asciinema.org/a/UzCoJZuV3R5i89iTPEegj1J6e
 
-[![asciicast](https://asciinema.org/a/UzCoJZuV3R5i89iTPEegj1J6e)
+[![asciicast](https://asciinema.org/a/UzCoJZuV3R5i89iTPEegj1J6e.svg)](https://asciinema.org/a/UzCoJZuV3R5i89iTPEegj1J6e)
