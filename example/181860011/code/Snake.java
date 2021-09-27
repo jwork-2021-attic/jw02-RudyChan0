@@ -52,6 +52,30 @@ public class Snake {
 
     }
 
+    public String matrixSort(Matrix matrix){
+        String log = new String();
+
+        if (sorter == null) {
+            return null;
+        }
+
+       int[] ranks=matrix.getRanks();
+
+        sorter.load(ranks);
+        sorter.sort();
+
+        String[] sortSteps = this.parsePlan(sorter.getPlan());
+
+        for (String step : sortSteps) {
+            this.execute(step);
+            System.out.println(matrix.toString());
+            log += matrix.toString();
+            log += "\n[frame]\n";
+        }
+
+        return log;
+    }
+
     private String[] parsePlan(String plan) {
         return plan.split("\n");
     }

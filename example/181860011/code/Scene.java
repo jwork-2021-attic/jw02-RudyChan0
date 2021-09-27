@@ -7,19 +7,20 @@ import java.io.IOException;
 public class Scene {
 
     public static void main(String[] args) throws IOException {
-        int num=16;
+        // int num=16;
 
+        // Gourd.generateGourds(num);
+
+        // Line line = new Line(num);
+        // line.randomPut(Gourd.getGourds());
+
+        int num=64;
+        int height=8;
+        int width=8;
         Gourd.generateGourds(num);
+        Matrix matrix=new Matrix(height, width);
+        matrix.randomPut(Gourd.getGourds());
 
-        Line line = new Line(num);
-        line.randomPut(Gourd.getGourds());
-        // line.put(Gourd.ONE, 6);
-        // line.put(Gourd.TWO, 3);
-        // line.put(Gourd.THREE, 1);
-        // line.put(Gourd.FOUR, 5);
-        // line.put(Gourd.FIVE, 2);
-        // line.put(Gourd.SIX, 4);
-        // line.put(Gourd.SEVEN, 0);
 
         Snake theSnake = Snake.getTheSnake();
 
@@ -28,7 +29,8 @@ public class Scene {
 
         theSnake.setSorter(sorter2);
 
-        String log = theSnake.lineUp(line);
+        //String log = theSnake.lineUp(line);
+        String log = theSnake.matrixSort(matrix);
 
         BufferedWriter writer;
         writer = new BufferedWriter(new FileWriter("result.txt"));

@@ -33,3 +33,19 @@
     https://asciinema.org/a/UzCoJZuV3R5i89iTPEegj1J6e
 
 [![asciicast](https://asciinema.org/a/UzCoJZuV3R5i89iTPEegj1J6e.svg)](https://asciinema.org/a/UzCoJZuV3R5i89iTPEegj1J6e)
+
+## task3
+
+新建Matrix类，以Line[]数组作为成员变量，直接按行调用Line中的函数操作。  
+实现排序，Snake类中实现matrixSort(Matrix matrix)函数，接受Matrix类getRanks()传出的int数组，直接传入sort即可。
+
+### 类图
+
+![](https://github.com/jwork-2021/jw02-RudyChan0/blob/master/example/181860011/uml/task3.png)
+
+
+
+### 可视化结果链接
+    https://asciinema.org/a/SJuMnBcqqoDM3TnVZbuwojO4z
+
+[![asciicast](https://asciinema.org/a/SJuMnBcqqoDM3TnVZbuwojO4z.svg)](https://asciinema.org/a/SJuMnBcqqoDM3TnVZbuwojO4z)
