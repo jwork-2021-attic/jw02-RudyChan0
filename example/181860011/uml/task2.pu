@@ -1,0 +1,80 @@
+@startuml
+
+interface Linable{
+    + setPosition()
+    + getPosition()
+    + getValue()
+}
+
+interface Sorter{
+    + load()
+    + sort()
+    + getPlan()
+}
+
+class Line{
+    -Position[] positions
+
+    +put()
+    +randomPut()
+    +get()
+    +toString()
+    +toArrey()
+}
+
+class Position{
+    -Linable linable
+
+    +setLinable()
+}
+
+class Gourd {
+    - int r
+    - int g
+    - int b
+    - int rank
+    - {static} Gourd[] gourds
+    - Position positions
+    - {static} randomList()
+    + {static} generateGourds()
+    + {static} getGourds()
+    + {static} getGourdByRank()
+    + rank()
+    + swapPosition()
+}
+
+class Snake{
+    - {static} Snake theSnake
+    + {static} getTheSnake()
+    - Sorter sorter
+    + setSorter()
+    + lineUp()
+    - prasePlan()
+    - execute()
+
+}
+
+class BubbleSorter{
+    - int[] a
+    - String plan
+    - swap()
+}
+
+class SelectionSorter{
+    - int[] a
+    - String plan
+    - swap()
+}
+
+
+Line +- Position
+Gourd o- Position
+Linable <|.. Gourd
+Snake o-Sorter
+Sorter <|..BubbleSorter
+Sorter <|..SelectionSorter
+Position <. Linable
+Linable <. Snake
+Line <. Snake
+
+@enduml
